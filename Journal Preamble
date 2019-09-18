@@ -1,0 +1,33 @@
+\documentclass[a4paper,oneside,article]{memoir}
+\include{Pre}
+
+
+
+\begin{document}
+%-------------------Forside----------------------------------------------
+\input{Forside.tex}
+%-------------------Indholdsfortenelse-----------------------------------
+\renewcommand\contentsname{Indholdsfortegnelse}
+\tableofcontents*
+\newpage
+%--------------------Kapitler--------------------------------------------
+\chapter{Introduktion} 
+\input{Introduktion.tex}
+\newpage
+\chapter{- Tre lednings balanceret system}
+\input{3-led-balancert.tex}
+\newpage
+\chapter{- Fire lednings balanceret system}
+\input{4-led-balanceret.tex}
+\newpage
+\chapter{- Tre lednings ubalanceret system}
+\input{3-led-ubalancert.tex}
+\newpage
+\chapter{- Fire lednings ubalanceret system}
+\input{4-led-ubalanceret.tex}
+\newpage
+\chapter{Målinger}
+\input{Resultater.tex}
+\chapter{Diskussion}
+\input{Konklusion.tex}
+\end{document}
