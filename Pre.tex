@@ -1,33 +1,40 @@
-\documentclass[a4paper,oneside,article]{memoir}
-\include{Pre}
+%\documentclass[a4paper,oneside,article]{memoir}
+%\include{Pre}
+
+% ---------------Preamble fra Latex kursus---------------------
+\usepackage[utf8]{inputenc}                 % Korrekt håndtering af æ, ø og å
+\usepackage[T1]{fontenc}                    % Korrekt håndtering af æ, ø og å
+\usepackage{microtype}                      % Typografisk magi! Giver bl.a. pænere orddeling
+\usepackage{graphicx}                       % Gør det muligt at indsætte billeder
+\usepackage{amsmath}                        % Giver adgang til uundværlige matematikting
+\usepackage{siunitx}                        % Dette  gør alle mat notationer nemmer ! 
+\usepackage[danish]{babel}                  % Danske betegnelser og orddeling
+\renewcommand{\danishhyphenmins}{22}        % Bedre dansk orddeling
+
+%--------------------Selv fundet Packer------------------------
+\usepackage[margin=1.1in]{geometry}         % Marginer
+\usepackage{ragged2e}                       % Retter alt ind til venstre
+\usepackage{parskip}                        % Strækker ud til begge marginer
+\usepackage{booktabs}                       % Tablesgenerator bad om det
+\setlength{\parindent}{0pt}                 % Fjerner indents
+%--------------------Ekstra------------------------------------
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{floatrow}
+\usepackage{lscape}
 
 
+%----------------------- Macroer ------------------------------
 
-\begin{document}
-%-------------------Forside----------------------------------------------
-\input{Forside.tex}
-%-------------------Indholdsfortenelse-----------------------------------
-\renewcommand\contentsname{Indholdsfortegnelse}
-\tableofcontents*
-\newpage
-%--------------------Kapitler--------------------------------------------
-\chapter{Introduktion} 
-\input{Introduktion.tex}
-\newpage
-\chapter{- Tre lednings balanceret system}
-\input{3-led-balancert.tex}
-\newpage
-\chapter{- Fire lednings balanceret system}
-\input{4-led-balanceret.tex}
-\newpage
-\chapter{- Tre lednings ubalanceret system}
-\input{3-led-ubalancert.tex}
-\newpage
-\chapter{- Fire lednings ubalanceret system}
-\input{4-led-ubalanceret.tex}
-\newpage
-\chapter{Målinger}
-\input{Resultater.tex}
-\chapter{Diskussion}
-\input{Konklusion.tex}
-\end{document}
+
+%----------------------Tabeller--------------------------------
+%\toprule               Top tyklinje
+%\midrule               Mid tyndlinje
+%\bottomrule            Bund tyklinje
+
+%\begin{minipage}[t]{7CM} TEXT \vspace{2mm}\end{minipage}        Tekstombrydning
+
+%-------------------Andre nytte komandoer----------------------
+%\plainbreak{x} x = antal linje jeg vil hoppe. 
+%\graphicspath{ {./images/} }
+%\begin{landscape}
+%\end{landscape}
