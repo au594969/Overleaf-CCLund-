@@ -1,0 +1,34 @@
+\documentclass[a4paper,oneside,article]{memoir}
+\include{Pre}
+
+
+
+\begin{document}
+%-------------------Forside----------------------------------------------
+\input{Forside.tex}
+%-------------------Indholdsfortenelse-----------------------------------
+\renewcommand\contentsname{Indholdsfortegnelse}
+\tableofcontents*
+\newpage
+%--------------------Kapitler--------------------------------------------
+\chapter{Introduktion} 
+\input{introduktion.tex}
+
+
+
+
+\chapter{Forberedelse}
+- Spørgsmål
+- opgave regning
+
+\chapter{Steprespons}
+\input{Steprespons.tex}
+\chapter{Frekvens karakteristik}
+\input{Frekvenskaraktirstik.tex}
+\chapter{Stationær Fejl}
+
+
+\chapter{MatLab simulering}
+
+
+\end{document}
